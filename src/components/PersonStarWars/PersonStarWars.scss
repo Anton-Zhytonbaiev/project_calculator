@@ -1,0 +1,23 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  max-width: 750px;
+}
+
+.list {
+  &__title {
+    margin: 10px auto;
+  }
+
+  &__button {
+    margin: 10px auto;
+    width: 300px;
+  }
+
+  &__element {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

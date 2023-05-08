@@ -1,26 +1,33 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-</template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CalculatorComponent from './components/CalculatorComponent/CalculatorComponent.vue'
+import PersonStarWars from './components/PersonStarWars/PersonStarWars.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CalculatorComponent,
+    PersonStarWars,
   }
 }
 </script>
 
+<template>
+  <div class="container">
+    <CalculatorComponent />
+    <PersonStarWars />
+  </div>
+</template>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body, h1, p, input, button, select {
+  font-family: Inter, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }
 </style>
